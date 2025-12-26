@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wallet Login DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">MyDApp</div>
+
+    <div class="wallet-area">
+      <button id="connectBtn" onclick="connectWallet()">Connect Wallet</button>
+      <button id="disconnectBtn" onclick="disconnectWallet()" style="display:none;">
+        Disconnect
+      </button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <h2>Welcome to the DApp</h2>
+    <p id="status">Not connected</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
